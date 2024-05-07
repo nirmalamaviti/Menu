@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+    background-color: #0056b3;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mess {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mess:hover {
+    transform: translateY(-5px);
+}
+
+
+.food img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.foodabout p{
+    font-size:8px;
+    font-family:cursive
+}
+.about {
+    padding: 15px;
+    display: flex;
+}
+.cost{
+    margin-left: 15%;
+}
+.item_name {
+    font-family: "Roboto", sans-serif; 
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333; 
+    margin-bottom: 5px;
+}
+
+.cost {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 16px;
+    color: #777777;
+}
+
+
+.item_name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+.cost {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 8px;
+}
+.foodabout p {
+   color:black;
+   padding-left: 15px;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
+    justify-content: center;
+    align-items: start; 
+    margin: 20px auto; 
+    max-width: 1200px;
+}
+@media (max-width: 768px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header button {
+        padding: 8px 16px;
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+   
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .header button {
+    
+            padding: 8px 12px;
+            margin: 3px;
+            font-size:8px;
+            display: grid;
+            grid-template-columns: repeat(3,8px);
+    }
+}
